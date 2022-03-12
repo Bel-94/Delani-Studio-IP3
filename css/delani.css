@@ -1,2 +1,16 @@
-body {
+body:: {
+    display:block;
+    content: "";
+    height: 70px;
+}
+.background1 {
+    background-size: cover;
+}
+
+.background2 {
+    background-size: cover;
+}
+
+.background3 {
+    background-size: cover;
 }
