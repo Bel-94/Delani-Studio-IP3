@@ -15,3 +15,9 @@ $(document).ready(function(){
         $(".p2").toggle();
     });
 });
+
+$(document).ready(function(){
+    $(".img").hover(function(){
+        $(".overlay").toggle();
+    });
+});
