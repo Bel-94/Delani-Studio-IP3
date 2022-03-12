@@ -14,3 +14,15 @@ body:: {
 .background3 {
     background-size: cover;
 }
+
+.p {
+    display: none;
+}
+
+.p1 {
+    display: none;
+}
+
+.p2 {
+    display: none;
+}
