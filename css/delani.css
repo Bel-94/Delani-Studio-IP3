@@ -15,6 +15,10 @@ body:: {
     background-size: cover;
 }
 
+h2 {
+    font-weight: bold;
+}
+
 .p {
     display: none;
 }
@@ -27,6 +31,45 @@ body:: {
     display: none;
 }
 
-h2 {
-    text
+/* .card {
+    position: relative;
 }
+
+#image {
+    display: block;
+}
+
+.imgoverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.imageoverlay > * {
+    transform: translate(20px);
+    transition: transform 0.25s;
+}
+
+.imgoverlay:hover {
+    opacity: 1;
+
+}
+
+.imgtitle {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.imgdescription {
+    font-size: 1.25em;
+    margin-top: 0.25em;
+} */
