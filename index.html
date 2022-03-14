@@ -17,10 +17,42 @@
     ></script>
     <link rel="stylesheet" href="css/delani.css" />
     <title>Delani Studio</title>
+
+    <style>
+      .background1 {
+        background: url("img/h_img.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      .background2 {
+        background: url("img/s_image.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      .background3 {
+        background: url("img/c_image.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+    </style>
   </head>
   <body>
-    <section class="background1 text-light p-5 text-center" style="background: url(https://raw.githubusercontent.com/jonnygovish/IP3/master/assets/backgrounds/h_img.jpg);">
-      <div class="container-fluid">
+    <!-- <section class="" > -->
+      <div class="container-fluid background1 text-light p-5 text-center vh-100">
             <div class="logo">
                 <img src="https://raw.githubusercontent.com/jonnygovish/IP3/master/assets/logo/logo.png">
             </div>
@@ -37,7 +69,7 @@
               <img src="https://raw.githubusercontent.com/jonnygovish/IP3/master/assets/mouse_click.png">
           </div>
       </div>
-    </section>
+    <!-- </section> -->
     <section class="bg-light text-dark p-5 text-center">
       <div class="container">
         <div>
@@ -61,13 +93,8 @@
         </div>
       </div>
     </section>
-    <section
-      class="background2 text-light p-5 text-center"
-      style="
-        background-image: url(https://raw.githubusercontent.com/jonnygovish/IP3/master/assets/backgrounds/s_image.jpg);
-      "
-    >
-      <div class="container">
+    <!-- <section -->
+      <div class="container-fluid background2 text-light p-5 text-center vh-100">
         <div>
           <div>
             <h1>Services</h1>
@@ -86,15 +113,15 @@
           </div>
         </div>
       </div>
-    </section>
+    <!-- </section> -->
     <section class="bg-light text-dark p-5 text-center">
       <div class="container">
           <h2 style="text-align:center;">WHAT WE DO</h2>
           <br>
         <div class="row text-center g-4">
           <div class="col-md">
-            <div class="design">
-              <img
+            <div>
+              <img class="design"
                 src="https://raw.githubusercontent.com/jonnygovish/IP3/master/assets/services_icons/design_icon.png"
                 class="cards-img-top"/>
                 <h5>DESIGN</h5>
@@ -111,8 +138,8 @@
               </div>
           </div>
           <div class="col-md">
-            <div class="development">
-              <img
+            <div>
+              <img class="development"
                 src="https://raw.githubusercontent.com/jonnygovish/IP3/master/assets/services_icons/dev_icon.png"
                 class="cards-img-top"/>
                 <h5>DEVELOPMENT</h5>
@@ -128,8 +155,8 @@
               </div>
           </div>
           <div class="col-md">
-            <div class="product">
-              <img
+            <div>
+              <img class="product"
                 src="https://raw.githubusercontent.com/jonnygovish/IP3/master/assets/services_icons/product_icon.png"
                 class="cards-img-top"/>
                 <h5>PRODUCT MANAGEMENT</h5>
@@ -147,16 +174,15 @@
           <h3>Portfolio</h3>
           <div class="row text-center g-4">
               <div class="col-md">
-                <div class="card" style="max-width: 18rem;">
+                <div class="card portfoliocard" id="porfoliocard1"  style="max-width: 18rem;">
                     <img src="https://raw.githubusercontent.com/jonnygovish/IP3/master/assets/portfolio/work4.jpg" id="image" class="cards-img-center">
-                    <!-- <div class="imgoverlay">
-                      <div class="imgtitle">Green</div>
-                      <p class="imgdescription">Green background</p>
-                    </div> -->
+                    <div class="imgoverlay" id="imgoverlay1"></div>
+                    <p class="imgdescription" id="imgdescription1">Green background</p>
+                    
                 </div>
               </div>
               <div class="col-md">
-                <div class="card" style="max-width: 18rem;">
+                <div class="card " style="max-width: 18rem;">
                     <img src="https://raw.githubusercontent.com/jonnygovish/IP3/master/assets/portfolio/work3.jpg" class="cards-img-center">
                 </div>
               </div>
@@ -200,15 +226,42 @@
         </div>
       </div>
     </section>
-    <section
-      class="background3 text-dark p-5 text-center"
-      style="
-        background-image: url(https://raw.githubusercontent.com/jonnygovish/IP3/master/assets/backgrounds/c_image.jpg);
-      "
-    >
-      <div class="container">
-        <div class="form-floating mb-3">
-          <input
+    <!-- <section -->
+      <div class="container-fluid background3 text-dark p-5 text-center vh-100">
+        <div class="row">
+          <div class="col-md-12 text-white text-center py-5">
+            <h2>
+              CONTACT US
+            </h2>
+          </div>
+        </div>
+        <form class="container-fluid" action="https://formspree.io/f/mknyzool" method="POST">
+          <div class="row" justify-content-center>
+          <div class="col-md-6 py-2">
+            <!-- Your Name: -->
+            <input type="text" class="rounded p-1"  name="Your-Name" id="Your-name" placeholder="Enter your name..." required> 
+          </div>
+          <div class="col-md-6 py-2">
+            <!-- Your email: -->
+            <input type="email" class="rounded p-1" name="user-email" id="user-email" placeholder="Enter your email..." required>
+          </div>
+          </div>
+          <div class="row" justify-content-center>
+          <div class="col-12">
+            <!-- Your message: -->
+            <textarea name="message" class="rounded p-1" id="message" rows="10" placeholder="Type your message here..." required></textarea>
+          </div>
+
+          <div class="col-md-8 pb-5 mb-5">
+          <button type="submit" class="btn btn-outline-light">Send</button>
+        </div>
+          </div>
+        </form>
+      </div>
+        
+      </div>
+      <!-- <div class="form-floating mb-3"></div> -->
+          <!-- <input
             type="Name"
             class="form-control"
             id="floatingInput"
@@ -237,8 +290,8 @@
         </div>
         <br />
         <input class="btn btn-primary" type="submit" value="Submit" />
-      </div>
-    </section>
+      </div> -->
+    <!-- </section> -->
 
     <!-- social-media-icons -->
     <section class="bg-light text-dark p-5 text-center">

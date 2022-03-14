@@ -1,10 +1,12 @@
-body:: {
+/* body:: {
     display:block;
     content: "";
-    height: 70px;
-}
-.background1 {
+    height: 70px; */
+/* } */
+/* .background1 {
     background-size: cover;
+    background-repeat: no-repeat;
+    background: ;
 }
 
 .background2 {
@@ -13,7 +15,7 @@ body:: {
 
 .background3 {
     background-size: cover;
-}
+} */
 
 h2 {
     font-weight: bold;
@@ -73,3 +75,51 @@ h2 {
     font-size: 1.25em;
     margin-top: 0.25em;
 } */
+
+
+textarea{
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+input{
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+::placeholder{
+    color: #fff;
+}
+
+button{
+    width: 100%;
+}
+
+.portfoliocard {
+    position: relative;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.imgoverlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(233, 128, 215, 0.5);
+    display: none;
+
+}
+
+.imgdescription {
+    position: absolute;
+    color: #fff;
+    z-index: 1;
+    align-self: center;
+    text-align: center;
+    display: none;
+}
