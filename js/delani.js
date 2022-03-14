@@ -41,3 +41,29 @@ $(document).ready(function(){
         $("#imgdescription1").toggle(1000)
     })
 });
+
+$(document).ready(function(){
+    $("#portfoliocard2").hover(function(){
+        $("#imgoverlay2").toggle(1000)
+        $("#imgdescription2").toggle(1000)
+    })
+});
+
+$(document).ready(function(){
+    $("#portfoliocard3").hover(function(){
+        $("#imgoverlay3").toggle(1000)
+        $("#imgdescription3").toggle(1000)
+    })
+});
+
+$(document).ready(function(){
+    $("#portfoliocard4").hover(function(){
+        $("#imgoverlay4").toggle(1000)
+        $("#imgdescription4").toggle(1000)
+    })
+});
+
+
+
+
+
