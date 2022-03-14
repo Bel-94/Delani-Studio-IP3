@@ -57,6 +57,13 @@ button{
     width: 100%;
 }
 
+.card-text {
+    font-size: large;
+}
+.card-title {
+    font-size: large;
+}
+
 .portfoliocard {
     position: relative;
     display: flex;
@@ -65,12 +72,13 @@ button{
 }
 
 .imgoverlay {
+    border: 2px solid white;
     position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(233, 128, 215, 0.5);
+    width: 50%;
+    height: 50%;
+    background-color: rgba(0, 0, 0, 0.8);
     display: none;
-
+    margin-left: 25%;
 }
 
 .imgdescription {

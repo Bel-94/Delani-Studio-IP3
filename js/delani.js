@@ -64,6 +64,42 @@ $(document).ready(function(){
 });
 
 
+$(document).ready(function(){
+    $("#portfoliocard5").hover(function(){
+        $("#imgoverlay5").toggle(1000)
+        $("#imgdescription5").toggle(1000)
+    })
+});
+
+$(document).ready(function(){
+    $("#portfoliocard6").hover(function(){
+        $("#imgoverlay6").toggle(1000)
+        $("#imgdescription6").toggle(1000)
+    })
+});
+
+$(document).ready(function(){
+    $("#portfoliocard7").hover(function(){
+        $("#imgoverlay7").toggle(1000)
+        $("#imgdescription7").toggle(1000)
+    })
+});
+
+$(document).ready(function(){
+    $("#portfoliocard8").hover(function(){
+        $("#imgoverlay8").toggle(1000)
+        $("#imgdescription8").toggle(1000)
+    })
+});
+
+
+
+
+
+
+
+
+
 
 
 
