@@ -18,6 +18,7 @@ No known bugs yet
 HTML,CSS,BOOTSTRAP,JS,JQUERY
 
 ##gh-pages live link
+https://bel-94.github.io/Delani-Studio-IP3/
 
 
 ### License
